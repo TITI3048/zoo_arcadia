@@ -58,7 +58,6 @@ h1 {
     font-family: "Comic sans ms", sans-serif;
     font-size: 40px;
     text-align: center;
-    margin-right: 300px;
     color: #fff;
 }
 
@@ -293,76 +292,9 @@ h3 {
     top: 90px;
     color: red;
 }
-.train{
-    width: 1000px;
-    height: 650px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 300px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.video1 {
-    width: 650px;
-    height: 400px;
-    margin-left: 100px;
-    padding-bottom: 20px;
-}
-
-.video2 {
-    width: 650px;
-    height: 400px;
-    margin-left: 20px;
-    padding-bottom: 20px;
-}
-
-.aventure {
-    color: #fff;
-    width: 45%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 18px;
-    padding-bottom: 20px;
-
-}
-
 .safari {
-    border: solid 3px #000000;
-    margin: 10px 10px 10px 10px;
-    border-radius: 10px;
     background: url(/image/image-services/belle-girafe-dans-nature_23-2151708875.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.visite-guide {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 10px 10px 10px;
-
-}
-
-.visite {
-    border-radius: 50%;
-    border: solid 3px #000000;
-    width: 600px;
-    height: 400px;
-    background-color: #e4d2a1;
-    margin-left: 100px;
-    text-align: center;
-}
-
-.guide {
-    width: 600px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    float: right;
-    margin-left: 100px;
-    border-radius: 10px;
-}
