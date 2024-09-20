@@ -6,6 +6,7 @@ export const allRoutes = [
     new Route("/jungle", "Jungle", "/pages/jungle.html"),
     new Route("/savane", "Savane", "/pages/savane.html"),
     new Route("/marais", "Marais", "/pages/marais.html"),
+    new Route("/connexion", "Connexion", "/pages/connexion.html"),
 ];
 
 export const websiteName = "Zoo Arcadia";

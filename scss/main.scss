@@ -56,9 +56,12 @@ p {
 
 h1 {
     font-family: "Comic sans ms", sans-serif;
-    font-size: 40px;
+    font-size: 60px;
     text-align: center;
     color: #fff;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    text-decoration-line: underline;
 }
 
 .carousel-item {
@@ -71,6 +74,15 @@ h3 {
     font-size: 30px;
     padding-bottom: 50px;
     padding-top: 10px;
+    text-align: center;
+}
+h5 {
+    color: #fff;
+    font-family: "Comic sans ms", sans-serif;
+    font-size: 30px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-align: center;
 }
 
 h4 {
