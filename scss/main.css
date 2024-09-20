@@ -12344,4 +12344,62 @@ h4, .h4 {
 
 .like {
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .resto1 img, .video1, .video2, .train {
+    width: 100%;
+    margin-left: 0;
+  }
+  .restauration, .aventure {
+    width: 100%;
+    padding: 10px;
+  }
+  h2, .h2, h3, .h3 {
+    font-size: 2rem;
+  }
+  h4, .h4 {
+    font-size: 1rem;
+  }
+  p, .aventure, .restauration {
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+}
+@media screen and (max-width: 768px) {
+  .visite-guide {
+    flex-direction: column;
+    align-items: center;
+  }
+  .visite {
+    order: 2;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+  }
+  .guide {
+    order: 1;
+    border: none;
+    border-radius: 0;
+  }
+}
+@media (max-width: 768px) {
+  #board {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+  .container {
+    width: auto;
+    height: auto;
+  }
+  .card {
+    width: 400px;
+    height: 600px;
+  }
+  .card .image, .card .image1 {
+    width: 100%;
+    height: auto;
+  }
 }/*# sourceMappingURL=main.css.map */

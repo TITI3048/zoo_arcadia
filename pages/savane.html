@@ -54,15 +54,43 @@
         grid-column: 3/4;
         grid-row: 2/3;
     }
+    .like {
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    background-image: url(https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png);
+    position: absolute;
+    top: 100%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+}
+.anim-like {
+    animation-name: anim-like;
+    animation-duration: 0.8s;
+    animation-timing-function: steps(28); 
+}
+@keyframes anim-like {
+    from{background-position: left;}
+    to{background-position: right;}
+}
+@media screen and (max-width: 768px) {
+    .text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .texte0, .texte1, .texte2, .reserve, .reserve1, .reserve3 {
+        width: 100%;
+        height: auto;
+    }
+}
 </style>
-<div class="hero-scene texte-center text-white"></div>
-    <div class="hero-scene-content">
-        <h1>Savane</h1>
-    </div>
-</div>
+
 <div class="text">
     <div class="texte0">
-        <h4>Savane</h4>
+        <h4>Savane</h2>
         <p>Le concept de la réserve est de recréer un environnement semi-naturel où les animaux évoluent en
             semi-liberté sur de grands espaces adaptés,
             leur permettant d'exprimer leurs comportements naturels et de se reproduire.
@@ -107,11 +135,7 @@
                     <P>Poids: 137 kg</P>
                     <p> Alimentation :viande</p>
                     <p>soins:</p>
-                    <div class="icons">
-                        <span class="like-count" data-id="12">0</span>
-                        <button class="like-button" data-id="12"> <img src="/image/like.png" class="button"
-                                alt="Like"></button>
-                    </div>
+                    <div class="like"></div>
                 </div>
             </div>
         </div>
@@ -131,11 +155,7 @@
                     <p>Poids: 53 kg</p>
                     <p>Alimentation: viande </p>
                     <p>soins:</p>
-                    <div class="icons">
-                        <span class="like-count" data-id="13">0</span>
-                        <button class="like-button" data-id="13"> <img src="/image/like.png" class="button"
-                                alt="Like"></button>
-                    </div>
+                    <div class="like"></div>
                 </div>
             </div>
         </div>
@@ -155,11 +175,7 @@
                     <p>Poids: 55 kg</p>
                     <p>Alimentation: viande</p>
                     <p>soins:</p>
-                    <div class="icons">
-                        <span class="like-count" data-id="14">0</span>
-                        <button class="like-button" data-id="14"> <img src="/image/like.png" class="button"
-                                alt="Like"></button>
-                    </div>
+                    <div class="like"></div>
                 </div>
             </div>
         </div>
@@ -178,11 +194,7 @@
                     <p>Alimentation: viande
                     <p>
                     <p>soins</p>
-                    <div class="icons">
-                        <span class="like-count" data-id="15">0</span>
-                        <button class="like-button" data-id="15"> <img src="/image/like.png" class="button"
-                                alt="Like"></button>
-                    </div>
+                    <div class="like"></div>
                 </div>
             </div>
         </div>
@@ -202,11 +214,7 @@
                     <p>Poids: 3 189 kg</p>
                     <p> Alimentation: herbe, feuilles, fruits, écorce</p>
                     <p>Soins:</p>
-                    <div class="icons">
-                        <span class="like-count" data-id="16">0</span>
-                        <button class="like-button" data-id="16"> <img src="/image/like.png" class="button"
-                                alt="Like"></button>
-                    </div>
+                    <div class="like"></div>
                 </div>
             </div>
         </div>
@@ -226,11 +234,7 @@
                     <p>Poids : 1 869 kg</p>
                     <p>Alimentation: Herbes, graminées, algues</p>
                     <p>Soins:</p>
-                    <div class="icons">
-                        <span class="like-count" data-id="17">0</span>
-                        <button class="like-button" data-id="17"> <img src="/image/like.png" class="button"
-                                alt="Like"></button>
-                    </div>
+                    <div class="like"></div>
                 </div>
             </div>
         </div>
@@ -251,11 +255,7 @@
                     <p>Poids: 2 155 kg</p>
                     <p>Alimentation:herbe, feuilles, jeunes pousses</p>
                     <p>Soins:</p>
-                    <div class="icons">
-                        <span class="like-count" data-id="18">0</span>
-                        <button class="like-button" data-id="18"> <img src="/image/like.png" class="button"
-                                alt="Like"></button>
-                    </div>
+                    <div class="like"></div>
                 </div>
             </div>
         </div>
@@ -275,11 +275,7 @@
                     <p>Poids: 1 850 kg</p>
                     <p>Alimentation: feuilles, fleurs, fruits</p>
                     <p>Soins:</p>
-                    <div class="icons">
-                        <span class="like-count" data-id="19">0</span>
-                        <button class="like-button" data-id="19"> <img src="/image/like.png" class="button"
-                                alt="Like"></button>
-                    </div>
+                    <div class="like"></div>
                 </div>
             </div>
         </div>
@@ -297,11 +293,7 @@
                     <p>poids: 304 kg</p>
                     <p>Alimentation: herbes, graminées</p>
                     <p>Soins:</p>
-                    <div class="icons">
-                        <span class="like-count" data-id="20">0</span>
-                        <button class="like-button" data-id="20"> <img src="/image/like.png" class="button"
-                                alt="Like"></button>
-                    </div>
+                    <div class="like"></div>
                 </div>
             </div>
         </div>
@@ -320,11 +312,7 @@
                     <p>Poids: 610 kg=</p>
                     <p>Alimentation: herbes, graminées</p>
                     <p>Soins:</p>
-                    <div class="icons">
-                        <span class="like-count" data-id="21">0</span>
-                        <button class="like-button" data-id="21"> <img src="/image/like.png" class="button"
-                                alt="Like"></button>
-                    </div>
+                    <div class="like"></div>
                 </div>
             </div>
         </div>
@@ -344,11 +332,7 @@
                     <p>Poids: 68 kg</p>
                     <p>Alimentation: Herbes, graminées, Feuillages, Plantes</p>
                     <p>Soins:</p>
-                    <div class="icons">
-                        <span class="like-count" data-id="22">0</span>
-                        <button class="like-button" data-id="22"> <img src="/image/like.png" class="button"
-                                alt="Like"></button>
-                    </div>
+                    <div class="like"></div>
                 </div>
             </div>
         </div>
