@@ -12038,6 +12038,16 @@ h3, .h3 {
   padding-top: 10px;
 }
 
+h4, .h4 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  font-family: "Comic sans ms", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .button {
   display: inline-block;
   margin-top: 10px;

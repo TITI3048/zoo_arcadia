@@ -1,0 +1,241 @@
+<style>
+    .text {
+        margin: 20px auto;
+        background: linear-gradient(to left, #f9fbb5, #34ae71b8); 
+        width: 82%;
+        height: 700px;
+        text-align: center;
+        font-weight: 500;
+        border: 3px solid #535252;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .texte0, .texte1, .texte2 {
+        width: 100%;
+        height: 350px;
+        border: none;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .texte0 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .texte1 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .texte2 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .voliere, .voliere2, .voliere3 {
+        width: 100%;
+        height: 350px;
+    }
+
+    .voliere {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .voliere2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .voliere3 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+</style>
+
+<div class="text">
+    <div class="texte0">
+        <h4>Habitats Aquatiques</h4>
+        <p>Les oiseaux aquatiques, tels que les canards et les flamants roses,
+            sont souvent logés dans des enclos avec des étangs, des petits lacs ou des mares.
+            Ces environnements permettent aux oiseaux de nager et de se nourrir de manière similaire à leur
+            habitat naturel.</p>
+    </div>
+
+    <div class="texte1">
+        <h4>Habitats Forestiers</h4>
+        <p>Les oiseaux de la forêt, comme les perroquets et les toucans, sont placés dans des volières
+            spacieuses avec une végétation dense.
+            Ces volières sont souvent équipées de branches et de perchoirs pour permettre aux oiseaux de voler
+            et de se percher, imitant ainsi les forêts tropicales ou tempérées.</p>
+    </div>
+
+    <div class="texte2">
+        <h4>Habitats de Prairie et de Montagne</h4>
+        <p>Les rapaces, tels que les aigles et les faucons, sont souvent logés dans des enclos qui reproduisent
+            les grands espaces ouverts ou montagnards.
+            Ces enclos sont conçus pour permettre aux oiseaux de voler sur de courtes distances et de chasser
+            des proies vivantes, simulant ainsi leur comportement naturel.</p>
+    </div>
+
+    <img src="/image/image-voliere/voliere.jpeg" class="voliere" alt="Volière" title="Volière">
+    <img src="/image/image-voliere/voliere2.jpeg" class="voliere2" alt="Volière 2" title="Volière 2">
+    <img src="/image/image-voliere/voliére3.jpeg" class="voliere3" alt="Volière 3" title="Volière 3">
+</div>
+
+
+    <div id="board">
+        <div class="container">
+            <div class="card" data-id="23">
+                <div class="front">
+                    <img class="image" src="/image/image-voliere/toucan.jpg" title="Toucan">
+                    <h4>Crocan le Toucan</h4>
+                </div>
+                <div class="back">
+                    <h3>Crocan le Toucan</h3>
+                    <img class="image1" src="/image/image-voliere/toucan2.webp" alt="Toucan Image">
+                    <p>Taille: 55 cm</p>
+                    <p>Poids: 842 g</p>
+                    <p>Alimentation: Fruits, baies et graines</p>
+                    <p>Soins:</p>
+                    <div class="icons">
+                        <span class="like-count" data-id="23">0</span>
+                        <button class="like-button" data-id="23"> <img src="/image/like.png" class="button" alt="like"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card" data-id="24">
+                <div class="front">
+                    <img class="image" src="/image/image-voliere/hornbill.jpg" alt="Hornbill">
+                    <h4>Alvin L'Hornbill</h4>
+                </div>
+                <div class="back">
+                    <img class="image1" src="/image/image-voliere/hornbill2.jpg" alt="Hornbill Image">
+                    <h3>Alvin L'Hornbill</h3>
+                    <p>Taille: 43 cm</p>
+                    <p>Poids: 2.8 kg</p>
+                    <p>Alimentation: fruits, Insectes, petits vertébrés</p>
+                    <p>Soins:</p>
+                    <div class="icons">
+                        <span class="like-count" data-id="24">0</span>
+                        <button class="like-button" data-id="24"> <img src="/image/like.png" class="button" alt="Like"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card" data-id="25">
+                <div class="front">
+                    <img class="image" src="/image/image-voliere/perroquet.jpg" alt="Perroquet">
+                    <h4>Hadock le Perroquet</h4>
+                </div>
+                <div class="back">
+                    <img class="image1" src="/image/image-voliere/perroquet2.jpg" alt="Perroquet Image">
+                    <h3>Hadock le Perroquet</h3>
+                    <p>Taille: 81 cm</p>
+                    <p>Poids: 3.8 kg</p>
+                    <p>Alimentation: graines, noix, fruits, légumes</p>
+                    <p>Soins:</p>
+                    <div class="icons">
+                        <span class="like-count" data-id="25">0</span>
+                        <button class="like-button" data-id="25"> <img src="/image/like.png" class="button"
+                                alt="Like"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card" data-id="26">
+                <div class="front">
+                    <img class="image" src="/image/image-voliere/flamant-rose.jpg" alt="Flamant Rose">
+                    <h4>Hermione le Flamant Rose</h4>
+                </div>
+                <div class="back">
+                    <img class="image1" src="/image/image-voliere/flamant-rose2.jpg" alt="Flamant Rose">
+                    <h3>Hermione le Flamant Rose</h3>
+                    <p>Taille: 1.32 métre</p>
+                    <p>Poids: 2,86 kg</p>
+                    <p>Alimentation: artémie, crustacés, poissons</p>
+                    <p>Soins:</p>
+                    <div class="icons">
+                        <span class="like-count" data-id="26">0</span>
+                        <button class="like-button" data-id="26"> <img src="/image/like.png" class="button"
+                                alt="Like"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card" data-id="27">
+                <div class="front">
+                    <img class="image" src="/image/image-voliere/huppe facié2.avif" title="Huppe Fasciée">
+                    <h4>Fonzi la Huppe Fasciée</h4>
+                </div>
+                <div class="back">
+                    <img class="image1" src="/image/image-voliere/huppe facié.jpg" title="Huppe Fasciée">
+                    <h3>Fonzi la Huppe Fasciée</h3>
+                    <p> Taille: 30 cm</p>
+                    <p>Poids: 72 g </p>
+                    <p>Alimentation: coléoptères, vers de terre, grillons</p>
+                    <p>Soins:</p>
+                    <div class="icons">
+                        <span class="like-count" data-id="27">0</span>
+                        <button class="like-button" data-id="27"> <img src="/image/like.png" class="button"
+                                alt="Like"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card" data-id="28">
+                <div class="front">
+                    <img class="image" src="/image/image-voliere/aigle royal2.jpg" alt="Aigle Royal">
+                    <h4>Louis l'Aigle Royale</h4>
+                </div>
+                <div class="back">
+                    <img class="image1" src="/image/image-voliere/aigle royal.jpg" alt="Aigle Royal">
+                    <h3>Louis l'Aigle Royale</h3>
+                    <p>Taille: 97.5 cm</p>
+                    <p>Poids: 5,5 kg.
+                    <p>Alimentation: viande et poissons</p>
+                    <p>Soins:</p>
+                    <div class="icons">
+                        <span class="like-count" data-id="28">0</span>
+                        <button class="like-button" data-id="28"> <img src="/image/like.png" class="button"
+                                alt="Like"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card" data-id="29">
+                <div class="front">
+                    <img class="image" src="/image/image-voliere/vautour (2).jpg" alt="Vautour">
+                    <h4>Buzzie le Vautour</h4>
+                </div>
+                <div class="back">
+                    <img class="image1" src="/image/image-voliere/vautour.jpg" alt="Vautour">
+                    <h3>Buzzie le Vautour</h3>
+                    <p>Taille: 11,5 kg</p>
+                    <p>Poids: 10,2 kg</p>
+                    <p>Alimentation: carcasses d'animaux</p>
+                    <p>Soins:</p>
+                    <div class="icons">
+                        <span class="like-count" data-id="29">0</span>
+                        <button class="like-button" data-id="29"> <img src="/image/like.png" class="button"
+                                alt="Like"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
