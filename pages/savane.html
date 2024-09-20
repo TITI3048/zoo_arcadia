@@ -1,9 +1,62 @@
+<style>
+    .text {
+        margin: 20px auto;
+        background: linear-gradient(to left, #f9fbb5, #34ae71b8); 
+        width: 82%;
+        height: 700px;
+        text-align: center;
+        font-weight: 500;
+        border: 3px solid #535252;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .texte0, .texte1, .texte2 {
+        width: 100%;
+        height: 350px;
+        border: none;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .texte0 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .texte1 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .texte2 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .reserve, .reserve2, .reserve3 {
+        width: 100%;
+        height: 350px;
+    }
+
+    .reserve {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .reserve2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .reserve3 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+</style>
+
 <div class="text">
-    <img src="/image/image-reserve-africaine/resreve.jpeg" class="reserve" alt="Image of the African reserve">
-    <img src="/image/image-reserve-africaine/reserve2.jpeg" class="reserve2" alt="Image of the African reserve 2">
-    <img src="/image/image-reserve-africaine/reserve3.jpeg" class="reserve3" alt="Image of the African reserve 3">
-
-
     <div class="texte0">
         <h2>Savane</h2>
         <p>Le concept de la réserve est de recréer un environnement semi-naturel où les animaux évoluent en
@@ -30,7 +83,11 @@
             Les visiteurs peuvent admirer des espèces emblématiques telles que des girafes,
             des zèbres, des lions et des rhinocéros, tout en profitant d'un cadre naturel exceptionnel.</p>
     </div>
+    <img src="/image/image-reserve-africaine/resreve.jpeg" class="reserve" alt="Image of the African reserve">
+    <img src="/image/image-reserve-africaine/reserve2.jpeg" class="reserve2" alt="Image of the African reserve 2">
+    <img src="/image/image-reserve-africaine/reserve3.jpeg" class="reserve3" alt="Image of the African reserve 3">
 </div>
+
 <div id="box">
     <div id="board">
         <div class="container">
