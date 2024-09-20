@@ -44,3 +44,5 @@ const routeEvent = (event) => {
 window.onpopstate = LoadContentPage;
 window.route = routeEvent;
 LoadContentPage();
+
+var titi = "dod";
