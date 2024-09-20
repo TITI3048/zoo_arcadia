@@ -337,12 +337,13 @@ h3 {
     grid-row: 2/3;
 }
 
-.jungle, .jungle1, .jungle3 {
+.jungle, .jungle1, .jungle3 
+.reserve .reserve2 .reserve3{
     width: 100%;
     height: 100%;
 }
 
-.jungle3 {
+.jungle3 .reserve3 {
     grid-column: 2/3;
     grid-row: 2/3;
     height: 400px;
