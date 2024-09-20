@@ -59,6 +59,93 @@
     margin-top: 80px;
     margin-bottom: 80px;
 }
+.carousel-inner img {
+    width: 100%;  /* Assure que l'image prend toute la largeur */
+    height: auto; /* Ajuste automatiquement la hauteur en fonction de la largeur */
+    object-fit: cover; /* Maintient les proportions sans déformer l'image */
+}
+
+
+/* Responsiveness */
+@media (max-width:800px) and (min-width: 150px) {
+    .container-3d .card {
+        width: 100%;
+        height: auto;
+        position: initial;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 25px;
+    }
+}
+
+@media (max-width:800px) {
+    .animation .caroussel {
+        width: 80%;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avis, .horaire {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1120px) {
+    .container-3d {
+    width: 100%;
+    height: auto;
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    .card {
+    width: 100%;
+    height: auto;
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    .front, .back {
+    width: 100%;
+    height: auto;
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    .image1 {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    .front-content, .back-content {
+    transform: none;
+    }
+}
+/* Ajuste les dimensions des images sur les écrans de tablette */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        max-height: 400px; /* Limite la hauteur sur les tablettes */
+    }
+}
+
+/* Ajuste les dimensions des images sur les écrans de téléphone */
+@media (max-width: 576px) {
+    .carousel-inner img {
+        max-height: 300px; /* Limite encore plus la hauteur sur les téléphones */
+    }
+}
 </style>
 
 <div class="hero-scene texte-center text-white">
