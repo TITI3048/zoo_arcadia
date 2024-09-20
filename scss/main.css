@@ -428,7 +428,6 @@ caption {
 th {
   text-align: inherit;
   text-align: -webkit-match-parent;
-  text-align: match-parent;
 }
 
 thead,
@@ -490,11 +489,6 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
-  appearance: button;
-  appearance: button;
-  appearance: button;
-  appearance: button;
-  appearance: button;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -552,7 +546,6 @@ legend + * {
 
 [type=search] {
   -webkit-appearance: textfield;
-  appearance: textfield;
   outline-offset: -2px;
 }
 
@@ -12170,58 +12163,6 @@ h4, .h4 {
 .button a {
   text-decoration: none;
   color: #000000;
-}
-
-.plan-site {
-  margin-top: 30px;
-  text-decoration: none;
-  background-color: #ffffff;
-  padding: 15px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  color: #000000;
-  border: solid 3px #000000;
-  margin-left: 20px;
-}
-
-.plan {
-  width: auto;
-  height: 750px;
-}
-
-.modale {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(77, 77, 77, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modale:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.modale_content {
-  padding: 1.5em 2em;
-  width: 800px;
-  max-width: 90%;
-  border: 15px;
-  position: relative;
-}
-
-.modale_close {
-  position: absolute;
-  font-size: x-large;
-  right: 280px;
-  top: 90px;
-  color: red;
 }
 
 #box {
