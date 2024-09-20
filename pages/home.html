@@ -1,151 +1,161 @@
 <style>
     .front,
-.back {
-    position: absolute;
-    border: solid 1px black;
-    border-radius: 20px;
-    width: 1000px;
-    height: 600px;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-}
+    .back {
+        position: absolute;
+        border: solid 1px black;
+        border-radius: 20px;
+        width: 1000px;
+        height: 600px;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+    }
 
-.front-content,
-.back-content {
-    transform: translateZ(70px);
-}
+    .front-content,
+    .back-content {
+        transform: translateZ(70px);
+    }
 
-.back {
-    text-align: center;
-    font-size: 20px;
-    background-image: linear-gradient(to right, #f9fbb5, #34ae71b8);
-    transform: rotateY(180deg);
-}
+    .back {
+        text-align: center;
+        font-size: 20px;
+        background-image: linear-gradient(to right, #f9fbb5, #34ae71b8);
+        transform: rotateY(180deg);
+    }
 
-.back h2 {
+    .back h2 {
 
-    color: #000000;
-    font-family: "Comic sans ms", sans-serif;
-    font-size: 40px;
-    padding-bottom: 30px;
-    padding-top: 50px;
-    text-shadow: #4064f6 2px 7px 2px;
-}
+        color: #000000;
+        font-family: "Comic sans ms", sans-serif;
+        font-size: 40px;
+        padding-bottom: 30px;
+        padding-top: 50px;
+        text-shadow: #4064f6 2px 7px 2px;
+    }
 
-.image3 {
-    width: 1000px;
-    height: 600px;
-    border-radius: 20px;
-}
+    .image3 {
+        width: 1000px;
+        height: 600px;
+        border-radius: 20px;
+    }
 
-.card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: 2s ease-in-out;
-    transform-style: preserve-3d;
-}
-
-.container-3d:hover .card {
-    transform: rotateY(180deg);
-}
-
-.container-3d {
-    width: 1000px;
-    height: 600px;
-    perspective: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-.carousel-inner img {
-    width: 100%;  /* Assure que l'image prend toute la largeur */
-    height: auto; /* Ajuste automatiquement la hauteur en fonction de la largeur */
-    object-fit: cover; /* Maintient les proportions sans déformer l'image */
-}
-
-
-/* Responsiveness */
-@media (max-width:800px) and (min-width: 150px) {
-    .container-3d .card {
+    .card {
+        position: relative;
         width: 100%;
-        height: auto;
-        position: initial;
+        height: 100%;
+        transition: 2s ease-in-out;
+        transform-style: preserve-3d;
+    }
+
+    .container-3d:hover .card {
+        transform: rotateY(180deg);
+    }
+
+    .container-3d {
+        width: 1000px;
+        height: 600px;
+        perspective: 700px;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 25px;
-    }
-}
-
-@media (max-width:800px) {
-    .animation .caroussel {
-        width: 80%;
-
-    }
-}
-
-@media (max-width: 768px) {
-    .content-wrapper {
-        flex-direction: column;
-        align-items: center;
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
 
-    .avis, .horaire {
+    .carousel-inner img {
         width: 100%;
-        max-width: 100%;
+        /* Assure que l'image prend toute la largeur */
+        height: auto;
+        /* Ajuste automatiquement la hauteur en fonction de la largeur */
+        object-fit: cover;
+        /* Maintient les proportions sans déformer l'image */
     }
-}
 
-@media (max-width: 1120px) {
-    .container-3d {
-    width: 100%;
-    height: auto;
-    position: initial;
-    margin-left: auto;
-    margin-right: auto;
-    }
-    
-    .card {
-    width: 100%;
-    height: auto;
-    position: initial;
-    margin-left: auto;
-    margin-right: auto;
-    }
-    
-    .front, .back {
-    width: 100%;
-    height: auto;
-    position: initial;
-    margin-left: auto;
-    margin-right: auto;
-    }
-    
-    .image1 {
-    width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    }
-    
-    .front-content, .back-content {
-    transform: none;
-    }
-}
-/* Ajuste les dimensions des images sur les écrans de tablette */
-@media (max-width: 768px) {
-    .carousel-inner img {
-        max-height: 400px; /* Limite la hauteur sur les tablettes */
-    }
-}
 
-/* Ajuste les dimensions des images sur les écrans de téléphone */
-@media (max-width: 576px) {
-    .carousel-inner img {
-        max-height: 300px; /* Limite encore plus la hauteur sur les téléphones */
+    /* Responsiveness */
+    @media (max-width:800px) and (min-width: 150px) {
+        .container-3d .card {
+            width: 100%;
+            height: auto;
+            position: initial;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 25px;
+        }
     }
-}
+
+    @media (max-width:800px) {
+        .animation .caroussel {
+            width: 80%;
+
+        }
+    }
+
+    @media (max-width: 768px) {
+        .content-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .avis,
+        .horaire {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 1120px) {
+        .container-3d {
+            width: 100%;
+            height: auto;
+            position: initial;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .card {
+            width: 100%;
+            height: auto;
+            position: initial;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .front,
+        .back {
+            width: 100%;
+            height: auto;
+            position: initial;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .image1 {
+            width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .front-content,
+        .back-content {
+            transform: none;
+        }
+    }
+
+    /* Ajuste les dimensions des images sur les écrans de tablette */
+    @media (max-width: 768px) {
+        .carousel-inner img {
+            max-height: 400px;
+            /* Limite la hauteur sur les tablettes */
+        }
+    }
+
+    /* Ajuste les dimensions des images sur les écrans de téléphone */
+    @media (max-width: 576px) {
+        .carousel-inner img {
+            max-height: 300px;
+            /* Limite encore plus la hauteur sur les téléphones */
+        }
+    }
 </style>
 
 <div class="hero-scene texte-center text-white">
@@ -289,14 +299,31 @@
 
         <a href="mail" class="mail">Arcadiazoo@mail.com</a>
 
-        <a href="#plan" class="plan-site">plan du site</a>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#planModal">
+            Ouvrir le plan
+        </button>
 
-        <div id="plan" class="modale">
-            <div class="modale_content">
-                <img src="/image/image-accueil/plan1.png" class="plan" alt="Plan du site">
-                <a href="#" class="modale_close">&times;
-                </a>
+        <div class="modal fade" id="planModal" tabindex="-1" role="dialog" aria-labelledby="planModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="planModalLabel">Plan du site</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/image/image-accueil/plan1.png" class="img-fluid" alt="Plan du site">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </div>
 </section>
